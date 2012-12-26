@@ -1,0 +1,3 @@
+GoldMosh is an application to facilitate datamoshing and make it accessible to the public.
+
+To create/edit the app, copy the entire text of "GoldMosh.txt" or "GoldMoshLIVE.txt" open the latest version of Max, then go to "File > New from Clipboard". From there, the custom menus will already be loaded, so go to "File > Max Menus".
