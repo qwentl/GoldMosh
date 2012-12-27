@@ -1,3 +1,7 @@
 GoldMosh is an application to facilitate datamoshing and make it accessible to the public.
 
-To create/edit the app, copy the entire text of "GoldMosh.txt" or "GoldMoshLIVE.txt" open the latest version of Max, then go to "File > New from Clipboard". From there, the custom menus will already be loaded, so go to "File > Max Menus".
+To create/edit the app, first download the .zip of all files, then copy the entire text of "GoldMosh.txt" or "GoldMoshLIVE.txt" open the latest version of Max, then go to "File > New from Clipboard". From there, the custom menus will already be loaded, so go to "File > Max Menus".
+Then, put "shell.mxo" in Max 6 > Cycling '74 > max-externals and "shell.help" in Max 6 > objects, and add the objects folder to your file preferences in Max.
+To build the application so it will run properly, go to File > Build Application/Collective and save it as an application wherever you want. Then, right/option-click and "Show Package Contents". Create a "Video" directory in "Contents", and put youtube-dl.sh into the folder. Then, copy "maxinterface.json" into Contents > support > interfaces and replace the existing version. Finally, I had to copy my msp-externals (Max 6 > Cycling '74 > msp-externals) folder into Contents > support too. GoldMosh should work without any problems after that!
+
+To run it as a patch in Max, you should build the app like I explained above, then bring the app to whatever filepath gets listed by the HDStripAddApp subpatcher. You can run the app properly from Max now without having to build it.
